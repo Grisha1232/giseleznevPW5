@@ -241,6 +241,8 @@ final class MainViewController: UIViewController, ObserverProtocol {
     
     @objc
     private func newsButtonPressed(_ sender: UIButton) {
+        let newsListViewController = NewsListViewController()
+        navigationController?.pushViewController(newsListViewController, animated: true);
     }
 }
 

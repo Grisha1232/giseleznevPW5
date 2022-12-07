@@ -22,6 +22,12 @@
 		C34548FF292B710900AA43AE /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34548FE292B710900AA43AE /* NoteCell.swift */; };
 		C3454901292B72F400AA43AE /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3454900292B72F400AA43AE /* AddNoteCell.swift */; };
 		C3454904292B781700AA43AE /* AddNoteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3454903292B781700AA43AE /* AddNoteDelegate.swift */; };
+		C38E744E2940BC2000870C1A /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E744D2940BC2000870C1A /* NewsListViewController.swift */; };
+		C38E74502940BEE100870C1A /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E744F2940BEE100870C1A /* NewsCell.swift */; };
+		C38E74532940C48400870C1A /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E74522940C48400870C1A /* NewsViewModel.swift */; };
+		C38E74552940D47400870C1A /* ApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E74542940D47400870C1A /* ApiResponseModel.swift */; };
+		C38E745D2940F2EA00870C1A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E745C2940F2EA00870C1A /* NewsViewController.swift */; };
+		C38E746129410DE300870C1A /* SkeletonNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E746029410DE300870C1A /* SkeletonNewsCell.swift */; };
 		C3A3344B292B69AB0041BFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3344A292B69AB0041BFE6 /* AppDelegate.swift */; };
 		C3A3344D292B69AB0041BFE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3344C292B69AB0041BFE6 /* SceneDelegate.swift */; };
 		C3A3344F292B69AB0041BFE6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3344E292B69AB0041BFE6 /* MainViewController.swift */; };
@@ -45,6 +51,12 @@
 		C34548FE292B710900AA43AE /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		C3454900292B72F400AA43AE /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 		C3454903292B781700AA43AE /* AddNoteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteDelegate.swift; sourceTree = "<group>"; };
+		C38E744D2940BC2000870C1A /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		C38E744F2940BEE100870C1A /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		C38E74522940C48400870C1A /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		C38E74542940D47400870C1A /* ApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModel.swift; sourceTree = "<group>"; };
+		C38E745C2940F2EA00870C1A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C38E746029410DE300870C1A /* SkeletonNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonNewsCell.swift; sourceTree = "<group>"; };
 		C3A33447292B69AB0041BFE6 /* giseleznevPW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giseleznevPW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A3344A292B69AB0041BFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3A3344C292B69AB0041BFE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +80,10 @@
 		C34548E5292B6B2C00AA43AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C38E744D2940BC2000870C1A /* NewsListViewController.swift */,
 				C3A3344E292B69AB0041BFE6 /* MainViewController.swift */,
 				C34548F9292B6CEA00AA43AE /* NotesViewController.swift */,
+				C38E745C2940F2EA00870C1A /* NewsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,10 +120,10 @@
 		C34548FB292B70AC00AA43AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C34548FE292B710900AA43AE /* NoteCell.swift */,
+				C38E74512940C46600870C1A /* Cells */,
 				C34548FC292B70BB00AA43AE /* ShortNote.swift */,
-				C3454900292B72F400AA43AE /* AddNoteCell.swift */,
-				C34075A0292BA284008B1A48 /* EditNoteCell.swift */,
+				C38E74522940C48400870C1A /* NewsViewModel.swift */,
+				C38E74542940D47400870C1A /* ApiResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +135,18 @@
 				C34075A2292BA2E0008B1A48 /* EditNoteDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C38E74512940C46600870C1A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C38E744F2940BEE100870C1A /* NewsCell.swift */,
+				C34548FE292B710900AA43AE /* NoteCell.swift */,
+				C3454900292B72F400AA43AE /* AddNoteCell.swift */,
+				C34075A0292BA284008B1A48 /* EditNoteCell.swift */,
+				C38E746029410DE300870C1A /* SkeletonNewsCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C3A3343E292B69AB0041BFE6 = {
@@ -229,8 +255,11 @@
 			files = (
 				C34548F0292B6C0100AA43AE /* ObserverBackgroundColor.swift in Sources */,
 				C3A3344F292B69AB0041BFE6 /* MainViewController.swift in Sources */,
+				C38E745D2940F2EA00870C1A /* NewsViewController.swift in Sources */,
 				C34548F4292B6C5D00AA43AE /* UIColor+Components.swift in Sources */,
 				C34548EA292B6BA800AA43AE /* ColorPaletteViewExtension.swift in Sources */,
+				C38E74532940C48400870C1A /* NewsViewModel.swift in Sources */,
+				C38E744E2940BC2000870C1A /* NewsListViewController.swift in Sources */,
 				C34075A3292BA2E0008B1A48 /* EditNoteDelegate.swift in Sources */,
 				C34548F8292B6C8500AA43AE /* UIView+HapticResponse.swift in Sources */,
 				C34548F2292B6C2100AA43AE /* ObserverChangedSlider.swift in Sources */,
@@ -238,9 +267,12 @@
 				C34548F6292B6C7200AA43AE /* UIButton+shadows.swift in Sources */,
 				C34075A1292BA284008B1A48 /* EditNoteCell.swift in Sources */,
 				C3A3344B292B69AB0041BFE6 /* AppDelegate.swift in Sources */,
+				C38E74552940D47400870C1A /* ApiResponseModel.swift in Sources */,
 				C34548FD292B70BB00AA43AE /* ShortNote.swift in Sources */,
 				C3454904292B781700AA43AE /* AddNoteDelegate.swift in Sources */,
+				C38E74502940BEE100870C1A /* NewsCell.swift in Sources */,
 				C3454901292B72F400AA43AE /* AddNoteCell.swift in Sources */,
+				C38E746129410DE300870C1A /* SkeletonNewsCell.swift in Sources */,
 				C34548FA292B6CEA00AA43AE /* NotesViewController.swift in Sources */,
 				C34548E7292B6B3F00AA43AE /* UIView+pins.swift in Sources */,
 				C34548ED292B6BD200AA43AE /* ColorPaletteView.swift in Sources */,
